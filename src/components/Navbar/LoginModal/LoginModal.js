@@ -1,10 +1,16 @@
 import { useContext } from 'react'
 
 import './LoginModal.scss'
+// No ned to Import the state here , you only need to import the context here
 import MainState from '../../../context/MainState'
+
+// this is the right import
+//import MainContext fromt "../../../context/MainContext"
 
 export default function LoginModal() {
 
+    // This is the place where you are making mistake. you need to call the Context not the state
+    //const context = useContext(MainContext)
     const context = useContext(MainState)
 
     console.log(context, 'this is the context');
