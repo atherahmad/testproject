@@ -1,0 +1,61 @@
+#login-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0,0,0,0.5);
+
+    .modal-content {
+        width: 500px;
+        background-color: #fff;
+    }
+
+    .modal-header,
+    .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    
+        .modal-title {
+            margin: 0;
+            font-size: 2rem;
+        }
+    }
+
+
+
+    .modal-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 1rem;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+    }
+
+    input,
+    button {
+        padding: 0.3rem;
+        margin: 0.3rem;
+        border-radius: 0.5rem;
+    }
+}
+
+
+
